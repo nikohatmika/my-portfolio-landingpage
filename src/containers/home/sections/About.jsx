@@ -18,6 +18,7 @@ const About = () => (
       <Button
         className="btn-round"
         color="primary"
+        size="lg"
         onClick={() => {
           if (process.browser) {
             window.open('/images/cv-ahmadandika2.pdf');
