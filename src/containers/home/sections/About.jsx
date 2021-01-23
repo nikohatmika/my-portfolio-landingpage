@@ -6,6 +6,7 @@ const About = () => (
   <div id="about">
     <Fade ssrFadeout top>
       <h3 className="title text-primary">About me</h3>
+      <hr className="text-primary description mb-0" />
     </Fade>
     <Fade ssrFadeout top>
       <h5 className="description text-primary">

@@ -9,11 +9,11 @@ const Footer = () => {
     <>
       <footer className="footer footer-default">
         <Container>
-          <div className="copyright" id="copyright">
-            <i className="now-ui-icons ui-1_email-85" />{' '}
-            <span>ahmad.andika212@gmail.com</span>
-            <i className="now-ui-icons tech_mobile ml-3" />{' '}
-            <span>085732721030</span>
+          <div className="copyright d-flex text-primary" id="copyright">
+            <i className="fas fa-envelope my-auto mr-1" />{' '}
+            <span>nikofebri@gmail.com</span>
+            <i className="fas fa-mobile-alt my-auto ml-3 mr-1" />{' '}
+            <span>+62 85336434445</span>
           </div>
         </Container>
       </footer>

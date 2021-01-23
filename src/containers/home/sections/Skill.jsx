@@ -8,66 +8,46 @@ const Skill = () => (
   <>
     <div className="" id="skills">
       <Fade ssrFadeout top>
-        <h3 className="title">Skills</h3>
+        <h3 className="title text-primary">Skills</h3>
         <Container>
           <Row>
-            <Col md="4">
-              <div className="progress-container">
-                <span className="progress-badge">HTML</span>
+            <Col md="6">
+              <div className="progress-container progress-success">
+                <span className="progress-badge ">HTML</span>
                 <Progress max="100" value="90">
-                  <span className="progress-value">90%</span>
+                  <span className="progress-value">80%</span>
+                </Progress>
+              </div>
+              <div className="progress-container progress-success">
+                <span className="progress-badge">CSS</span>
+                <Progress max="100" value="75">
+                  <span className="progress-value">75%</span>
                 </Progress>
               </div>
               <div className="progress-container progress-info">
-                <span className="progress-badge">CSS</span>
-                <Progress max="100" value="85">
-                  <span className="progress-value">85%</span>
-                </Progress>
-              </div>
-              <div className="progress-container progress-warning">
                 <span className="progress-badge">Javascript</span>
                 <Progress max="100" value="85">
                   <span className="progress-value">85%</span>
                 </Progress>
               </div>
             </Col>
-            <Col sm="4">
-              <div className="progress-container">
+            <Col md="6">
+              <div className="progress-container progress-info">
                 <span className="progress-badge progress-info">React JS</span>
-                <Progress max="100" value="95">
-                  <span className="progress-value">95%</span>
-                </Progress>
-              </div>
-              <div className="progress-container progress-danger">
-                <span className="progress-badge">Angular</span>
-                <Progress max="100" value="60">
-                  <span className="progress-value">60%</span>
-                </Progress>
-              </div>
-              <div className="progress-container progress-warning">
-                <span className="progress-badge">Wordpress</span>
-                <Progress max="100" value="60">
-                  <span className="progress-value">60%</span>
-                </Progress>
-              </div>
-            </Col>
-            <Col sm="4">
-              <div className="progress-container">
-                <span className="progress-badge">jQuery</span>
                 <Progress max="100" value="90">
                   <span className="progress-value">90%</span>
                 </Progress>
               </div>
               <div className="progress-container progress-info">
                 <span className="progress-badge">Next JS</span>
-                <Progress max="100" value="95">
-                  <span className="progress-value">95%</span>
+                <Progress max="100" value="90">
+                  <span className="progress-value">90%</span>
                 </Progress>
               </div>
-              <div className="progress-container progress-warning">
-                <span className="progress-badge">PHP</span>
-                <Progress max="100" value="70">
-                  <span className="progress-value">70%</span>
+              <div className="progress-container progress-success">
+                <span className="progress-badge">Bootstrap</span>
+                <Progress max="100" value="80">
+                  <span className="progress-value">80%</span>
                 </Progress>
               </div>
             </Col>
