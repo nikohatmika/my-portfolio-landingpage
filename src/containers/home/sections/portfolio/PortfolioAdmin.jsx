@@ -3,61 +3,49 @@ import { Row, Col, Badge } from 'reactstrap';
 
 const listOne = [
   {
-    id: 1,
-    img: 'admin-amartha.png',
-    title: 'Amartha Admin',
-    tag: ['React JS', 'SCSS', 'HTML', 'REST API']
+    id: 'a1',
+    img: ['hot_00', 'hot_01'],
+    title: 'Host of Trust (Kemenkeu)',
+    tag: ['HTML', 'SCSS', 'JavaScript', 'React JS', 'Next JS'],
+    url: null
   },
   {
-    id: 2,
-    img: 'admin-riliv.png',
-    title: 'Riliv Admin',
-    tag: ['React JS', 'SCSS', 'HTML', 'REST API']
-  },
-  {
-    id: 3,
-    img: 'admin-daxium-chat.png',
-    title: 'Daxium Admin Chat',
-    tag: ['React JS', 'SCSS', 'HTML', 'REST API', 'Firebase']
-  },
-  {
-    id: 4,
-    img: 'admin-ninkatec.png',
-    title: 'Ninkatec',
-    tag: ['React JS', 'SCSS', 'HTML', 'REST API', 'Socket.io']
-  },
-  {
-    id: 5,
-    img: 'admin-paslon.png',
-    title: 'Paslon',
-    tag: ['React JS', 'SCSS', 'HTML', 'REST API', 'Pusher']
+    id: 'a2',
+    img: [
+      'foodbroadmin_00',
+      'foodbroadmin_01',
+      'foodbroadmin_02',
+      'foodbroadmin_03'
+    ],
+    title: 'FOODBRO Admin',
+    tag: ['HTML', 'SCSS', 'JavaScript', 'React JS'],
+    url: null
   }
 ];
 
 const listTwo = [
   {
-    id: 1,
-    img: 'admin-redwhite.png',
-    title: 'Red White',
-    tag: ['React JS', 'SCSS', 'HTML', 'REST API']
+    id: 'b1',
+    img: ['xeni_00', 'xeni_01', 'xeni_02'],
+    title: 'Xeni Keyboard (Xendit)',
+    tag: ['HTML', 'SCSS', 'JavaScript', 'React JS', 'Next JS'],
+    url: null
   },
   {
-    id: 2,
-    img: 'admin-mcmaster.png',
-    title: 'MCMaster Admin',
-    tag: ['React JS', 'SCSS', 'HTML', 'REST API']
-  },
-  {
-    id: 3,
-    img: 'admin-jomblo.png',
-    title: 'Jomblo Admin',
-    tag: ['React JS', 'SCSS', 'HTML', 'REST API']
-  },
-  {
-    id: 4,
-    img: 'admin-mandiri.png',
-    title: 'Mandiri Sekuritas Admin',
-    tag: ['React JS', 'SCSS', 'HTML', 'REST API']
+    id: 'b2',
+    img: [
+      'sidely_00',
+      'sidely_01',
+      'sidely_02',
+      'sidely_03',
+      'sidely_04',
+      'sidely_05',
+      'sidely_06'
+    ],
+    title: 'Sidely',
+    tag: ['HTML', 'SCSS', 'JavaScript', 'React JS'],
+    extraTag: ['Map', 'Trello Like Card Management', 'Dynamic Form Builder'],
+    url: null
   }
 ];
 
@@ -71,7 +59,7 @@ const PortfolioAdmin = () => (
               <img
                 alt="..."
                 className="img-raised"
-                src={require(`@images/portofolio/header/${data.img}`)}
+                src={require(`@images/portfolio/${data.img[0]}.png`)}
               />
               <div className="card-absolute">
                 <div>
@@ -108,7 +96,7 @@ const PortfolioAdmin = () => (
               <img
                 alt="..."
                 className="img-raised"
-                src={require(`@images/portofolio/header/${data.img}`)}
+                src={require(`@images/portfolio/${data.img[0]}.png`)}
               />
               <div className="card-absolute">
                 <div>
@@ -118,9 +106,18 @@ const PortfolioAdmin = () => (
                 <div className="d-flex justify-content-center">
                   {data.tag &&
                     data.tag.length > 0 &&
-                    data.tag.map((vl, index) => (
-                      <Badge color="default" className="mr-1" key={index}>
-                        {vl}
+                    data.tag.map(tag => (
+                      <Badge color="default" className="mr-1" key={tag}>
+                        {tag}
+                      </Badge>
+                    ))}
+                </div>
+                <div className="d-flex justify-content-center">
+                  {data.extraTag &&
+                    data.extraTag.length > 0 &&
+                    data.extraTag.map(tag => (
+                      <Badge color="default" className="mr-1" key={tag}>
+                        {tag}
                       </Badge>
                     ))}
                 </div>

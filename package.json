@@ -12,6 +12,7 @@
   "author": "andika",
   "license": "ISC",
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.19.26",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "atob": "^2.1.2",
