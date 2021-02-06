@@ -25,9 +25,15 @@ const Skill = () => (
                 </Progress>
               </div>
               <div className="progress-container progress-info">
-                <span className="progress-badge">Javascript</span>
+                <span className="progress-badge">JavaScript</span>
                 <Progress max="100" value="85">
                   <span className="progress-value">85%</span>
+                </Progress>
+              </div>
+              <div className="progress-container progress-success">
+                <span className="progress-badge">TypeScript</span>
+                <Progress max="100" value="70">
+                  <span className="progress-value">70%</span>
                 </Progress>
               </div>
             </Col>
@@ -48,6 +54,12 @@ const Skill = () => (
                 <span className="progress-badge">Bootstrap</span>
                 <Progress max="100" value="80">
                   <span className="progress-value">80%</span>
+                </Progress>
+              </div>
+              <div className="progress-container progress-success">
+                <span className="progress-badge">Ionic</span>
+                <Progress max="100" value="70">
+                  <span className="progress-value">70%</span>
                 </Progress>
               </div>
             </Col>

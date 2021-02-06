@@ -20,6 +20,13 @@ const listOne = [
     title: 'FOODBRO Admin',
     tag: ['HTML', 'SCSS', 'JavaScript', 'React JS'],
     url: null
+  },
+  {
+    id: 'a3',
+    img: ['kamiadmin_00', 'kamiadmin_01'],
+    title: 'KAMI Backoffice',
+    tag: ['HTML', 'SCSS', 'JavaScript', 'React JS', 'Next JS'],
+    url: null
   }
 ];
 
@@ -45,6 +52,13 @@ const listTwo = [
     title: 'Sidely',
     tag: ['HTML', 'SCSS', 'JavaScript', 'React JS'],
     extraTag: ['Map', 'Trello Like Card Management', 'Dynamic Form Builder'],
+    url: null
+  },
+  {
+    id: 'b3',
+    img: ['sahamrakyatadmin_00', 'sahamrakyatadmin_01', 'sahamrakyatadmin_02'],
+    title: 'Saham Rakyat Backoffice',
+    tag: ['HTML', 'SCSS', 'JavaScript', 'React JS', 'Next JS'],
     url: null
   }
 ];

@@ -22,7 +22,7 @@ const About = () => (
         size="lg"
         onClick={() => {
           if (process.browser) {
-            window.open('/images/cv-ahmadandika2.pdf');
+            window.open('/images/my-resume.pdf');
           }
         }}
       >
