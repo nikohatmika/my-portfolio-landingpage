@@ -45,8 +45,8 @@ class MyApp extends App {
     return (
       <>
         <DefaultSeo
-          title="Niko's Portfolio"
-          description="Niko's portfolio"
+          title="Yuni's Portfolio"
+          description="Yuni's Portfolio"
           openGraph={{
             type: 'website',
             locale: 'en_IE',

@@ -4,66 +4,60 @@ import { Row, Col, Badge } from 'reactstrap';
 const listOne = [
   {
     id: 'a1',
-    img: ['hot_00', 'hot_01'],
-    title: 'Host of Trust (Kemenkeu)',
-    tag: ['HTML', 'SCSS', 'JavaScript', 'React JS', 'Next JS'],
-    url: null
+    img: ['boxin_00'],
+    title: 'Box-In App',
+    url: 'https://play.google.com/store/apps/details?id=com.twiscode.boxin'
   },
   {
     id: 'a2',
-    img: [
-      'foodbroadmin_00',
-      'foodbroadmin_01',
-      'foodbroadmin_02',
-      'foodbroadmin_03'
-    ],
-    title: 'FOODBRO Admin',
-    tag: ['HTML', 'SCSS', 'JavaScript', 'React JS'],
-    url: null
+    img: ['dokterapps_00'],
+    title: 'dokter app',
+    url: 'https://play.google.com/store/apps/details?id=com.twiscode.fkunair'
   },
   {
     id: 'a3',
-    img: ['kamiadmin_00', 'kamiadmin_01'],
-    title: 'KAMI Backoffice',
-    tag: ['HTML', 'SCSS', 'JavaScript', 'React JS', 'Next JS'],
-    url: null
+    img: ['fashion_forth_00'],
+    title: 'Fashion Forth App',
+    url:
+      'https://play.google.com/store/apps/details?id=com.twiscode.fashionforth'
+  },
+  {
+    id: 'a4',
+    img: ['gpbb_00'],
+    title: 'GPBB',
+    url: 'https://play.google.com/store/apps/details?id=com.twiscode.gpbb'
   }
 ];
 
 const listTwo = [
   {
     id: 'b1',
-    img: ['xeni_00', 'xeni_01', 'xeni_02'],
-    title: 'Xeni Keyboard (Xendit)',
-    tag: ['HTML', 'SCSS', 'JavaScript', 'React JS', 'Next JS'],
-    url: null
+    img: ['omahlab_00'],
+    title: 'OMAH LAB',
+    url: 'https://play.google.com/store/apps/details?id=com.omahlab.android'
   },
   {
     id: 'b2',
-    img: [
-      'sidely_00',
-      'sidely_01',
-      'sidely_02',
-      'sidely_03',
-      'sidely_04',
-      'sidely_05',
-      'sidely_06'
-    ],
-    title: 'Sidely',
-    tag: ['HTML', 'SCSS', 'JavaScript', 'React JS'],
-    extraTag: ['Map', 'Trello Like Card Management', 'Dynamic Form Builder'],
-    url: null
+    img: ['pass_00'],
+    title: 'PASS SWAB',
+    url: 'http://book.passwab.com'
   },
   {
     id: 'b3',
-    img: ['sahamrakyatadmin_00', 'sahamrakyatadmin_01', 'sahamrakyatadmin_02'],
-    title: 'Saham Rakyat Backoffice',
-    tag: ['HTML', 'SCSS', 'JavaScript', 'React JS', 'Next JS'],
-    url: null
+    img: ['stellar_00'],
+    title: 'Stellar Pass',
+    url:
+      'https://play.google.com/store/apps/details?id=com.twiscode.stellar.dev'
+  },
+  {
+    id: 'b4',
+    img: ['xettle_00'],
+    title: 'xettle app',
+    url: 'https://play.google.com/store/apps/details?id=com.xettle.android'
   }
 ];
 
-const PortfolioAdmin = () => (
+const PortofolioList = () => (
   <>
     <Col className="ml-auto mr-auto" md="12">
       <Row className="collections">
@@ -72,8 +66,9 @@ const PortfolioAdmin = () => (
             <a href="javascript::void();" className="card-parent" key={data.id}>
               <img
                 alt="..."
-                className="img-raised"
-                src={require(`@images/portfolio/${data.img[0]}.png`)}
+                className="img-raised mx-2"
+                src={require(`@images/port/${data.img[0]}.jpg`)}
+                height="480px"
               />
               <div className="card-absolute">
                 <div>
@@ -83,9 +78,19 @@ const PortfolioAdmin = () => (
                 <div className="d-flex justify-content-center">
                   {data.tag &&
                     data.tag.length > 0 &&
-                    data.tag.map((vl, index) => (
-                      <Badge color="default" className="mr-1" key={index}>
+                    data.tag.map(vl => (
+                      <Badge color="default" className="mr-1" key={vl}>
                         {vl}
+                      </Badge>
+                    ))}
+                </div>
+
+                <div className="d-flex justify-content-center">
+                  {data.extraTag &&
+                    data.extraTag.length > 0 &&
+                    data.extraTag.map(tag => (
+                      <Badge color="default" className="mr-1" key={tag}>
+                        {tag}
                       </Badge>
                     ))}
                 </div>
@@ -109,8 +114,9 @@ const PortfolioAdmin = () => (
             <a href="javascript::void();" className="card-parent" key={data.id}>
               <img
                 alt="..."
-                className="img-raised"
-                src={require(`@images/portfolio/${data.img[0]}.png`)}
+                className="img-raised mx-2"
+                src={require(`@images/port/${data.img[0]}.jpg`)}
+                height="480px"
               />
               <div className="card-absolute">
                 <div>
@@ -120,12 +126,13 @@ const PortfolioAdmin = () => (
                 <div className="d-flex justify-content-center">
                   {data.tag &&
                     data.tag.length > 0 &&
-                    data.tag.map(tag => (
-                      <Badge color="default" className="mr-1" key={tag}>
-                        {tag}
+                    data.tag.map(vl => (
+                      <Badge color="default" className="mr-1" key={vl}>
+                        {vl}
                       </Badge>
                     ))}
                 </div>
+
                 <div className="d-flex justify-content-center">
                   {data.extraTag &&
                     data.extraTag.length > 0 &&
@@ -154,4 +161,4 @@ const PortfolioAdmin = () => (
   </>
 );
 
-export default PortfolioAdmin;
+export default PortofolioList;

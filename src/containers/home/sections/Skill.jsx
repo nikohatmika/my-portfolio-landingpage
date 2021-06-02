@@ -12,54 +12,59 @@ const Skill = () => (
         <Container>
           <Row>
             <Col md="6">
-              <div className="progress-container progress-success">
-                <span className="progress-badge ">HTML</span>
-                <Progress max="100" value="90">
-                  <span className="progress-value">80%</span>
-                </Progress>
-              </div>
-              <div className="progress-container progress-success">
-                <span className="progress-badge">CSS</span>
-                <Progress max="100" value="75">
-                  <span className="progress-value">75%</span>
-                </Progress>
-              </div>
               <div className="progress-container progress-info">
-                <span className="progress-badge">JavaScript</span>
+                <span className="progress-badge progress-info">
+                  Poject Management
+                </span>
                 <Progress max="100" value="85">
                   <span className="progress-value">85%</span>
                 </Progress>
               </div>
-              <div className="progress-container progress-success">
-                <span className="progress-badge">TypeScript</span>
-                <Progress max="100" value="70">
-                  <span className="progress-value">70%</span>
-                </Progress>
-              </div>
-            </Col>
-            <Col md="6">
+
               <div className="progress-container progress-info">
-                <span className="progress-badge progress-info">React JS</span>
-                <Progress max="100" value="90">
-                  <span className="progress-value">90%</span>
-                </Progress>
-              </div>
-              <div className="progress-container progress-info">
-                <span className="progress-badge">Next JS</span>
-                <Progress max="100" value="90">
-                  <span className="progress-value">90%</span>
-                </Progress>
-              </div>
-              <div className="progress-container progress-success">
-                <span className="progress-badge">Bootstrap</span>
+                <span className="progress-badge progress-info">
+                  Poject Documentation
+                </span>
                 <Progress max="100" value="80">
                   <span className="progress-value">80%</span>
                 </Progress>
               </div>
+
               <div className="progress-container progress-success">
-                <span className="progress-badge">Ionic</span>
+                <span className="progress-badge progress-success">
+                  Management Software - Trello/JIRA/XONE
+                </span>
+                <Progress max="100" value="75">
+                  <span className="progress-value">75%</span>
+                </Progress>
+              </div>
+
+              <div className="progress-container progress-danger">
+                <span className="progress-badge progress-info">
+                  Design - Figma/Adobe XD/Gravit Design{' '}
+                </span>
+                <Progress max="100" value="60">
+                  <span className="progress-value">60%</span>
+                </Progress>
+              </div>
+            </Col>
+            <Col md="6">
+              <div className="progress-container progress-success">
+                <span className="progress-badge ">Mobile-Dev React Native</span>
                 <Progress max="100" value="70">
                   <span className="progress-value">70%</span>
+                </Progress>
+              </div>
+              <div className="progress-container progress-danger">
+                <span className="progress-badge ">Mobile-Dev Flutter</span>
+                <Progress max="100" value="50">
+                  <span className="progress-value">50%</span>
+                </Progress>
+              </div>
+              <div className="progress-container progress-danger">
+                <span className="progress-badge ">Mobile-Dev Swift UI</span>
+                <Progress max="100" value="50">
+                  <span className="progress-value">50%</span>
                 </Progress>
               </div>
             </Col>

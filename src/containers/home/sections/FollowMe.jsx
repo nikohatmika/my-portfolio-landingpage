@@ -18,24 +18,10 @@ const FollowMe = () => {
           <Button
             className="btn-round btn-icon"
             color="primary"
-            onClick={() => {
-              window.open('https://github.com/nikohatmika');
-            }}
-            id="tooltip515203352"
-            size="lg"
-          >
-            <i className="fab fa-github" />
-          </Button>
-          <UncontrolledTooltip delay={0} target="tooltip515203352">
-            Follow me on Github
-          </UncontrolledTooltip>
-          <Button
-            className="btn-round btn-icon"
-            color="primary"
             id="tooltip340339231"
             size="lg"
             onClick={() => {
-              window.open('https://www.instagram.com/nf_hatmika');
+              window.open('https://www.instagram.com/yun.yunai');
             }}
           >
             <i className="fab fa-instagram" />
@@ -50,7 +36,7 @@ const FollowMe = () => {
             size="lg"
             onClick={() => {
               window.open(
-                'https://www.linkedin.com/in/niko-hatmika-6500a0187/'
+                'https://www.linkedin.com/in/eko-sri-wahyuni-270695/'
               );
             }}
           >

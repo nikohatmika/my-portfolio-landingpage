@@ -20,9 +20,9 @@ class MyDocument extends Document {
           <link
             rel="icon"
             type="image/png"
-            href={require('@images/nougat.png')}
+            href={require('@images/y-icon.jpeg')}
           />
-          <link rel="apple-touch-icon" href={require('@images/nougat.png')} />
+          <link rel="apple-touch-icon" href={require('@images/y-icon.jpeg')} />
           <meta name="theme-color" content="#000000" />
 
           <link

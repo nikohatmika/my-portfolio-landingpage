@@ -10,9 +10,9 @@ const About = () => (
     </Fade>
     <Fade ssrFadeout top>
       <h5 className="description text-primary">
-        Versatile Frontend web developer with 2+ years of experience developing,
-        managing, and maintaining simple to complex websites and dashboard
-        admins. Specializes in ReactJS and responsive design.
+        I am a detail oriented and self-motivated IT-Focused Project Manager
+        with advanced education in both bussiness administration and computer
+        science.
       </h5>
     </Fade>
     <div className="text-center w-100">
