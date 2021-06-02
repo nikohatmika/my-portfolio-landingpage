@@ -29,7 +29,8 @@ const Skill = () => (
                   <span className="progress-value">80%</span>
                 </Progress>
               </div>
-
+            </Col>
+            <Col md="6">
               <div className="progress-container progress-success">
                 <span className="progress-badge progress-success">
                   Management Software - Trello/JIRA/XONE
@@ -45,26 +46,6 @@ const Skill = () => (
                 </span>
                 <Progress max="100" value="60">
                   <span className="progress-value">60%</span>
-                </Progress>
-              </div>
-            </Col>
-            <Col md="6">
-              <div className="progress-container progress-success">
-                <span className="progress-badge ">Mobile-Dev React Native</span>
-                <Progress max="100" value="70">
-                  <span className="progress-value">70%</span>
-                </Progress>
-              </div>
-              <div className="progress-container progress-danger">
-                <span className="progress-badge ">Mobile-Dev Flutter</span>
-                <Progress max="100" value="50">
-                  <span className="progress-value">50%</span>
-                </Progress>
-              </div>
-              <div className="progress-container progress-danger">
-                <span className="progress-badge ">Mobile-Dev Swift UI</span>
-                <Progress max="100" value="50">
-                  <span className="progress-value">50%</span>
                 </Progress>
               </div>
             </Col>

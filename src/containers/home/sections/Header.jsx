@@ -37,7 +37,7 @@ const Header = () => {
           </div>
           <Reveal effect="fadeInUp" ssrFadeout>
             <h3 className="title">Eko Sri Wahyuni</h3>
-            <p className="category">Project Manager / Mobile Developer</p>
+            <p className="category">Project Manager</p>
           </Reveal>
         </Container>
       </div>
