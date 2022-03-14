@@ -11,6 +11,8 @@ import {
 } from 'reactstrap';
 
 const TopNavbar = () => {
+  // dasdasd
+  // sadjkasjdas
   const [navbarColor, setNavbarColor] = React.useState('navbar-transparent');
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {

@@ -7,6 +7,12 @@ const appReducer = combineReducers({
   form: formReducer
 });
 
+// dasdasdasd
+// asdasdasdas
+// asdasdasdas
+// asdasdasd
+// asdasdasdasd
+
 const rootReducer = (state, action) => {
   if (action.type === 'LOGOUT_SUCCESS') {
     state = undefined;

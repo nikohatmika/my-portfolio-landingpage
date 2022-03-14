@@ -5,6 +5,12 @@ import reducers from './index';
 
 const initState = {};
 
+// dasdasdasd
+// asdasdasd
+// asdasjhkjdhahd
+// askhdahsdas
+// jkhaskjdhjahsdhk
+
 export const initStore = (initialState = initState) =>
   createStore(
     reducers,

@@ -5,6 +5,8 @@ import React from 'react';
 import { Container } from 'reactstrap';
 
 const Footer = () => {
+  // asdkjalsjdljasdljaskld
+  //askljdlkasjlkdjasldjkl
   return (
     <>
       <footer className="footer footer-default">
